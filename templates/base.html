@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>JDM-культура</title>
+ </head>
+   <style>
+	body {
+		background: #FFF url('https://imageup.ru/img291/3760182/jdm_culture.jpg'); /* Фоновый цвет и фоновый рисунок*/
+		color: #000; /*Цвет текста на странице*/
+		background-attachment: fixed; /* Фон страницы фиксируется */
+		background-size: 100%;
+	}
+   </style>
+
+ <body>
+
+<header>
+  <p style="color:Black;"><a href="{% url 'home' %}">Домашняя страница</a> | <a href="{% url 'about' %}">О сайте</a> | <a href="{% url 'cars' %}">Модели автомобилей</a>| <a href="{% url 'help' %}">Поддержка авторов</a></p>
+</header>
+
+{% block content %}
+{% endblock content %}
